@@ -46,7 +46,7 @@ function calculatePlan(formData: any) {
   return { calories, protein, mealType }
 }
 
-function SectionHeader({ eyebrow, title, subtitle }) {
+function SectionHeader({ eyebrow, title, subtitle }: any) {
   return (
     <div className="mx-auto mb-14 max-w-4xl text-center">
       <p className="text-sm font-semibold uppercase tracking-[0.25em] text-green-400">{eyebrow}</p>
@@ -56,7 +56,7 @@ function SectionHeader({ eyebrow, title, subtitle }) {
   )
 }
 
-function IntroSection({ onStart }) {
+function IntroSection({ onStart }: any) {
   return (
     <section className="relative min-h-screen overflow-hidden bg-gradient-to-b from-black via-zinc-950 to-black px-6 py-20 text-center">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(34,197,94,0.16),transparent_42%)]" />
@@ -441,7 +441,7 @@ function PlanBuilderSection() {
   )
 }
 
-function InputField({ label, name, value, onChange, placeholder }) {
+function InputField({ label, name, value, onChange, placeholder }: any) {
   return (
     <div>
       <label className="text-sm text-zinc-400">{label}</label>
@@ -457,7 +457,7 @@ function InputField({ label, name, value, onChange, placeholder }) {
   )
 }
 
-function SelectField({ label, name, value, onChange, options }) {
+function SelectField({ label, name, value, onChange, options }: any) {
   return (
     <div>
       <label className="text-sm text-zinc-400">{label}</label>
