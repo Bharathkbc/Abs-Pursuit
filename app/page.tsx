@@ -10,7 +10,7 @@ const ACTIVITY_MULTIPLIERS = {
   athlete: 1.9,
 }
 
-function calculatePlan(formData) {
+function calculatePlan(formData: any) {
   const weight = Number(formData.weight) || 0
   const height = Number(formData.height) || 170
   const age = Number(formData.age) || 25
